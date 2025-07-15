@@ -1,4 +1,11 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+
+@plugin "daisyui" {
+  themes: cyberpunk;
+}
+
 
 :root {
   --background: #ffffff;
