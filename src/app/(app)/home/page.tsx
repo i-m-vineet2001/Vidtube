@@ -24,9 +24,10 @@ function Home() {
     }
   }, []);
 
-  useEffect(() => {
-    fetchVideos();
-  }, [fetchVideos]);
+useEffect(() => {
+  fetchVideos();
+  console.log(videos); // ✅ See what each video looks like
+}, [fetchVideos]);
 
   const handleDownload = useCallback((url: string, title: string) => {
     () => {
